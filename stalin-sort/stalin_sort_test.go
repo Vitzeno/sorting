@@ -23,6 +23,10 @@ func TestStalinSort(t *testing.T) {
 			unordered: []int{9, 5, 2, 6, 7, 1},
 			ordered:   []int{9},
 		},
+		{
+			unordered: []int{5, 2, 9, 3, 1},
+			ordered:   []int{5, 9},
+		},
 	} {
 		assert.Equal(t, tc.ordered, Sort(tc.unordered))
 	}
