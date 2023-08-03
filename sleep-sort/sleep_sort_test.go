@@ -16,6 +16,6 @@ func TestSleepSort(t *testing.T) {
 			ordered:   []int{1, 2, 3, 4, 5},
 		},
 	} {
-		assert.Equal(t, Sort(tc.unordered), tc.ordered)
+		assert.Equal(t, tc.ordered, Sort(tc.unordered))
 	}
 }

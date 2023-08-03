@@ -15,7 +15,7 @@ func Sort[T constraints.Integer](values []T) []T {
 	for _, value := range values {
 		wg.Add(1)
 		go func(value T) {
-			// Sleep for a duration of current value.
+			// Sleep for the duration of current value.
 			time.Sleep(time.Duration(time.Duration(value) * time.Second))
 
 			ordered = append(ordered, value)
