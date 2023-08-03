@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestSleepSort(t *testing.T) {
+func TestBogoSort(t *testing.T) {
 	for _, tc := range []struct {
 		unordered []int
 		ordered   []int
